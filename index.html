@@ -31,11 +31,30 @@
     <div class="container">
       
       <!-- Timeblocks go here -->
-      <div class="day">day</div>
-      <div class="time-block">time</div>
-   
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <style>
+      #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+      #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+      #sortable li span { position: absolute; margin-left: -1.3em; }
+      </style>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+      <script>
+      $( function() {
+        $( "#sortable" ).sortable();
+      } );
+      </script>
+    </head>
+    <body>
+     
+    <ul id="sortable">
+      <li class="ui-state-default"><span class="time-block"></span></li>
+      <li class="ui-state-default"><span class="day"></span></li>
+    </ul>
+      
+      </script>
     <script src="HW5.js"></script>
   </body>
 </html>
